@@ -1,0 +1,102 @@
+$fontMain: 'Open Sans', sans-serif;
+// $OpenSans: 'Open Sans', sans-serif;
+$orange: #f75506;
+$grey: #79787f;
+.h100{
+    height: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+body {
+    font-family: $fontMain;
+    // background-color: #79787f;
+}
+//хз откуда, но приходится дописывать
+button:focus {
+    outline: none;
+}
+
+header{
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 30px;
+}
+.topInfo{
+    width: 100%;
+    background-color: #1D8EEA;
+    padding: 20px 0;
+    i{
+        margin-right: 5px;
+        color: #fff;
+    }
+    p{
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover, &:focus{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+nav{
+    .menu{
+        margin: 0;
+    li{
+        margin-right: 20px;
+        &.active{
+            a{
+                color: #fff;
+                background-color: #A02A63;
+                border-radius: 14px;
+                transition: all 0.3s;
+            }
+        }
+        a{
+            font-size: 14px;
+            padding: 8px 20px;
+            color: #1a1a1a;
+            font-weight: bold; 
+            border-radius: 12px;  
+            &:hover, &:focus{
+                background-color: #A02A63;
+                transition: all 0.3s;
+                color: #fff;
+            }    
+        }
+    }
+}
+}
+
+section#gallery{
+    margin-bottom: 40px;
+}
+.headText{
+    padding: 30px 0;
+    h1{
+
+    }
+}
+.gallery{
+    img{
+        margin-bottom: 20px;
+    }
+    a:not(:last-of-type){
+            margin-right: 20px;
+        }
+    
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #343A40;
+}
