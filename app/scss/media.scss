@@ -3,7 +3,17 @@
 }
 
 @media (max-width: 991px) {
-
+    header.logo{
+        text-align: center;
+    }
+    .info{
+        i{
+            display: inline-block;
+        }
+        p{
+            display: inline-block;
+        }
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {

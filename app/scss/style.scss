@@ -1,10 +1,7 @@
 $fontMain: 'Open Sans', sans-serif;
 // $OpenSans: 'Open Sans', sans-serif;
-$orange: #f75506;
-$grey: #79787f;
-.h100{
-    height: 100%;
-}
+$fontSlogan: 'Marck Script', cursive;
+
 .bold{
     font-weight: bold;
 }
@@ -16,29 +13,32 @@ a{
 }
 body {
     font-family: $fontMain;
-    // background-color: #79787f;
+}
+.logo{
+    padding: 20px 0;
 }
 //хз откуда, но приходится дописывать
-button:focus {
-    outline: none;
-}
 
 header{
-    border-bottom: 1px solid #cdcdcd;
     margin-bottom: 30px;
+    background-color: rgb(20, 119, 201);
 }
-.topInfo{
-    width: 100%;
-    background-color: #1D8EEA;
+.info{
     padding: 20px 0;
+    div:not(:last-of-type){
+        margin-bottom: 10px;
+    }
     i{
         margin-right: 5px;
         color: #fff;
+        display: inline-block;
     }
     p{
-        font-size: 14px;
+        font-size: 16px;
         color: #fff;
         margin: 0;
+        display: inline-block;
+
         a{
             color: #fff;
             text-decoration: none;
@@ -48,55 +48,73 @@ header{
         }
     }
 }
-
-nav{
-    .menu{
+.slogan{
+    h1,p{
+        font-family: $fontSlogan;
+        color: #fff;
+        padding: 0;
         margin: 0;
-    li{
-        margin-right: 20px;
-        &.active{
-            a{
-                color: #fff;
-                background-color: #A02A63;
-                border-radius: 14px;
-                transition: all 0.3s;
-            }
-        }
-        a{
-            font-size: 14px;
-            padding: 8px 20px;
-            color: #1a1a1a;
-            font-weight: bold; 
-            border-radius: 12px;  
-            &:hover, &:focus{
-                background-color: #A02A63;
-                transition: all 0.3s;
-                color: #fff;
-            }    
-        }
+    }
+    p{
+        font-size: 20px;
     }
 }
-}
+// nav{
+//     .menu{
+//         margin: 0;
+//     li{
+//         margin-right: 20px;
+//         &.active{
+//             a{
+//                 color: #fff;
+//                 background-color: #A02A63;
+//                 border-radius: 14px;
+//                 transition: all 0.3s;
+//             }
+//         }
+//         a{
+//             font-size: 14px;
+//             padding: 8px 20px;
+//             color: #1a1a1a;
+//             font-weight: bold; 
+//             border-radius: 12px;  
+//             &:hover, &:focus{
+//                 background-color: #A02A63;
+//                 transition: all 0.3s;
+//                 color: #fff;
+//             }    
+//         }
+//     }
+// }
+// }
 
 section#gallery{
     margin-bottom: 40px;
 }
 .headText{
     padding: 30px 0;
-    h1{
-
-    }
 }
 .gallery{
     img{
         margin-bottom: 20px;
     }
-    a:not(:last-of-type){
-            margin-right: 20px;
-        }
+    // a:not(:last-of-type){
+    //         margin-right: 20px;
+    //     }
     
 }
 
 .table-bordered td, .table-bordered th {
     border: 1px solid #343A40;
+}
+footer{
+    background-color: rgb(20, 119, 201);
+    padding: 20px 0;
+    margin-top: 40px;
+        p{
+            color: #fff;
+        }
+        h3{
+            color: #fff;
+        }
 }
